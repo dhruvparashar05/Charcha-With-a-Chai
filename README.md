@@ -58,7 +58,7 @@ A sarcastic yet helpful senior software engineer who roasts coding mistakes whil
 ### Frontend
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 
 ### Backend
 - Node.js
@@ -109,7 +109,7 @@ npm install
 ### 3. Create a `.env` file
 
 ```env
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ### 4. Start the server
