@@ -78,7 +78,7 @@ app.post('/api/chat', async (req, res) => {
     ];
 
     const isGemini = apiKey && (apiKey.startsWith('AQ') || apiKey.startsWith('AIzaSy'));
-    const model = isGemini ? 'gemini-2.5-flash' : 'gpt-4o-mini';
+    const model = isGemini ? 'gemini-3.5-flash' : 'gpt-4o-mini';
 
     const response = await openai.chat.completions.create({
       model: model,
