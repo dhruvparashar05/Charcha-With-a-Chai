@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charcha With a Chai ☕ | Cozy AI Developer Mentorship</title>
+  <meta name="description" content="Engage in warm, Hinglish programming conversations with experienced AI mentors at a cozy virtual chai tapri. Choose from a Calm Mentor or Witty Engineer.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <!-- Main View Container -->
+  <main class="main-container">
+    
+    <!-- LANDING VIEW -->
+    <section class="view active" id="landing-view">
+      <div class="landing-header">
+        <div class="landing-logo">☕</div>
+        <h1 class="landing-title">Charcha With a Chai</h1>
+        <p class="landing-subtitle">"Choose someone to have a chai discussion with."</p>
+        <p class="landing-desc">
+          Whether you're debugging code, planning projects, preparing for interviews, or just curious about programming, pull up a chair and start a conversation.
+        </p>
+      </div>
+
+      <div class="mentor-grid">
+        <!-- Card 1: Calm Mentor -->
+        <div class="mentor-card" id="card-calm-mentor">
+          <div class="card-image-wrapper">
+            <img src="images/calm_mentor.jpg" alt="Hitesh Choudhary Avatar" class="mentor-img" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h2 class="mentor-name">Hitesh Choudhary</h2>
+            <div class="mentor-tags">
+              <span class="tag">Patient</span>
+              <span class="tag">Friendly</span>
+              <span class="tag">Backend</span>
+            </div>
+            <button class="btn-start" id="btn-calm-mentor">Start Charcha →</button>
+          </div>
+        </div>
+
+        <!-- Card 2: Witty Engineer -->
+        <div class="mentor-card" id="card-witty-engineer">
+          <div class="card-image-wrapper">
+            <img src="images/funny_engineer.jpg" alt="Piyush Garg Avatar" class="mentor-img" loading="lazy">
+          </div>
+          <div class="card-content">
+            <h2 class="mentor-name">Piyush Garg</h2>
+            <div class="mentor-tags">
+              <span class="tag">Sarcastic</span>
+              <span class="tag">Web Dev</span>
+              <span class="tag">GenAI</span>
+            </div>
+            <button class="btn-start" id="btn-witty-engineer">Start Charcha →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAT VIEW -->
+    <section class="view" id="chat-view">
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <button class="btn-back" id="btn-back-to-tapri" aria-label="Go back">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back
+        </button>
+        
+        <div class="chat-mentor-info">
+          <img src="" alt="Active Mentor Avatar" class="chat-avatar" id="active-mentor-avatar">
+          <div class="chat-mentor-details">
+            <h2 class="chat-mentor-name" id="active-mentor-name">Mentor Name</h2>
+            <div class="chat-status">
+              <span class="status-dot"></span>
+              <span class="status-text">Ready for Charcha</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Messages Container -->
+      <div class="chat-messages" id="chat-messages-container">
+        <!-- Message bubbles dynamically injected by JS -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator" id="chat-typing-indicator" style="display: none;">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <!-- Input Area -->
+      <form class="chat-input-area" id="chat-form">
+        <textarea 
+          class="chat-input" 
+          id="chat-textarea" 
+          placeholder="Ask anything..." 
+          rows="1" 
+          required
+        ></textarea>
+        <button type="submit" class="btn-send" id="btn-send-message" aria-label="Send message">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+
+
+  <!-- App Logic Javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
